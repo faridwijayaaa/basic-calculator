@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1632207190829-a97e41017175?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=890&q=80");
+    background-size: cover;
+}
+
+section {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 400px;
+}
+
+.calcu-screen {
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    color: #FFF;
+    text-align: right;
+    font-size: 6vh;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+}
+
+.calcu-keys{
+    width: 100%;
+}
+
+.rows {
+    display: flex;
+}
+
+.rows button {
+    height: 80px;
+    width: 25%;
+    font-size: 5vh;
+    border: 1px solid black;
+    background-color: gray;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+}
+
+.rows .all-clear, .rows .zero-btn {
+    width: 50%;
+}
+
+.rows .operator, .rows .equal-sign {
+    background-color: cyan;
+    color: #000;
+}
+
+button:hover {
+    background-color: darkgray;
+    transition: 0.5s;
+}
+
+.rows .operator:hover, .rows .equal-sign:hover {
+    background-color: darkcyan;
+    color: #FFF;
+}
